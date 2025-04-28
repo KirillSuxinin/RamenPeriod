@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
-using System.IO;
 
-namespace Ramen_period
+namespace Ramen_period.Dialogs
 {
-    public partial class Form1 : Form
+    public partial class AuthDialogForm : Form
     {
-        public Form1()
+        public AuthDialogForm()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

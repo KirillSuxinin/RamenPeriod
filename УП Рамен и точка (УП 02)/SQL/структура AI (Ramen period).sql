@@ -43,7 +43,8 @@ CREATE TABLE Users (
     [Password] VARCHAR(255) NOT NULL,
     Phone VARCHAR(20),
     Address VARCHAR(MAX),
-    RegistrationDate DATETIME DEFAULT CURRENT_TIMESTAMP
+    RegistrationDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+	IsAdmin BIT NOT NULL DEFAULT 0
 );
 
 -- Таблица: Адреса доставки (для каждого пользователя может быть несколько адресов)
