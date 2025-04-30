@@ -4,7 +4,7 @@
 --•  Products: Сами блюда рамен, их описание, цена, картинка и остаток на складе.
 --•  Additives: Различные добавки к рамену (яйца, мясо, овощи, соусы и т.д.).
 --•  ProductAdditives: Связывает рамен с доступными добавками. Удобно, чтобы можно было выбирать опции при заказе.
---•  Users: Информация о зарегистрированных пользователях.
+--•  [Users]: Информация о зарегистрированных пользователях.
 --•  Addresses: Адреса доставки пользователей (у одного пользователя может быть несколько адресов).
 --•  Orders: Информация о заказах (дата, пользователь, адрес, общая сумма, статус).
 --•  OrderItems: Содержимое заказа (какие блюда и в каком количестве были заказаны).
@@ -12,6 +12,10 @@
 --•  ProductReviews: Отзывы пользователей о рамене.
 --•  Promotions: Информация об акциях и скидках. Может быть привязана к конкретным товарам или категориям.
 --•  PaymentMethods: Перечень доступных способов оплаты.
+
+---			Ramen_Period
+
+
 
 
 -- Таблица: Категории товаров (рамен, добавки, напитки и т.д.)
@@ -35,7 +39,7 @@ CREATE TABLE Products (
 );
 
 -- Таблица: Пользователи (покупатели)
-CREATE TABLE Users (
+CREATE TABLE [Users] (
     UserID INT PRIMARY KEY NOT NULL,
     FirstName VARCHAR(MAX) NOT NULL,
     LastName VARCHAR(MAX) NOT NULL,
@@ -54,7 +58,7 @@ CREATE TABLE Addresses (
     AddressLine VARCHAR(MAX) NOT NULL, --УЛИЦА
     City VARCHAR(MAX) NOT NULL, --Город
     [State] VARCHAR(MAX), --Область
-    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+    FOREIGN KEY (UserID) REFERENCES [Users](UserID)
 );
 
 -- Таблица: Заказы
@@ -66,7 +70,7 @@ CREATE TABLE Orders (
     TotalAmount DECIMAL(10, 2) NOT NULL,
     OrderStatus VARCHAR(MAX) NOT NULL DEFAULT 'Сформирован' CHECK(OrderStatus = 'Сформирован' OR OrderStatus = 'Выполняется' OR OrderStatus = 'Отменён' OR OrderStatus = 'Передан в доставку' OR OrderStatus = 'Доставлен' ),
     PaymentMethod VARCHAR(MAX) NOT NULL DEFAULT 'Наличные' CHECK(PaymentMethod = 'Наличные' OR PaymentMethod = 'Картой' OR PaymentMethod = 'Онлайн'),
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (UserID) REFERENCES [Users](UserID),
     FOREIGN KEY (AddressID) REFERENCES Addresses(AddressID)
 );
 
@@ -88,7 +92,7 @@ CREATE TABLE ShoppingCart (
     ProductID INT NOT NULL,
     Quantity INT NOT NULL,
     AddedDate DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (UserID) REFERENCES [Users](UserID),
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
@@ -101,7 +105,7 @@ CREATE TABLE ProductReviews (
     [Comment] VARCHAR(MAX),
     ReviewDate DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID),
-    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+    FOREIGN KEY (UserID) REFERENCES [Users](UserID)
 );
 
 -- Таблица: Акции и скидки
