@@ -6,8 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ramen_period.Dialogs;
 
 namespace Ramen_period
 {
@@ -16,6 +18,7 @@ namespace Ramen_period
         public MainForm()
         {
             InitializeComponent();
+            BindL<MainForm>.Set(this);
         }
         
         private void MainForm_Load(object sender, EventArgs e)
@@ -47,9 +50,22 @@ namespace Ramen_period
         /// <param name="e"></param>
         private void AuthToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("СОБЫТИЕ ВОЙТИ");
+            Dialogs.AuthDialogForm authF = new Dialogs.AuthDialogForm();
+
+
+
+            //MessageBox.Show("СОБЫТИЕ ВОЙТИ");
+
+            authF.Owner = this;
+            authF.DialogResult = DialogResult.None;
+            authF.ShowDialog();
+            
 
         }
+
+
+        
+
         /// <summary>
         /// Событие для кнопки "Мой аккаунт"
         /// </summary>
@@ -58,6 +74,8 @@ namespace Ramen_period
         private void DeAuthToolStripMenuItem_Click(object sender,EventArgs e)
         {
             MessageBox.Show("СОБЫТИЕ МОЙ АККАУНТ");
+
+            
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Ramen_period
                 {
                     Debugger.Log(0, PATHCODE.WARNING, "Start connect server", typeof(Program));
                     SQL.Open();
-                    Debugger.Log(1, PATHCODE.MESSAGE, "End connect server", typeof(Program));
+                    Debugger.Log(1, PATHCODE.MESSAGE, $"End connect server / state: {SQL.State}", typeof(Program));
                 }
                 catch(Exception g)
                 {

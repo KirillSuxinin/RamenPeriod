@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bak\StateUpdater.cs" />
     <Compile Include="Debugger.cs" />
     <Compile Include="Dialogs\AuthDialogForm.cs">
       <SubType>Form</SubType>
@@ -76,6 +77,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ramen_PeriodDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dialogs\AuthDialogForm.resx">
+      <DependentUpon>AuthDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

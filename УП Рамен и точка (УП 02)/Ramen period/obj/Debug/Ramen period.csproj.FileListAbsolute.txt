@@ -19,3 +19,15 @@ C:\Users\кирилл\Desktop\УП,ПП\УП Рамен и точка (УП 02)\
 C:\Users\кирилл\Desktop\УП,ПП\УП Рамен и точка (УП 02)\Ramen period\bin\Debug\Ramen period.exe
 C:\Users\кирилл\Desktop\УП,ПП\УП Рамен и точка (УП 02)\Ramen period\bin\Debug\Ramen period.pdb
 C:\Users\кирилл\Desktop\УП,ПП\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen_period.MainForm.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\bin\Debug\Ramen period.exe.config
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\bin\Debug\Ramen period.exe
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\bin\Debug\Ramen period.pdb
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen period.csproj.AssemblyReference.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen_period.Dialogs.AuthDialogForm.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen_period.Form1.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen_period.MainForm.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen_period.Properties.Resources.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen period.csproj.GenerateResource.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen period.csproj.CoreCompileInputs.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen period.exe
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\Ramen period\obj\Debug\Ramen period.pdb

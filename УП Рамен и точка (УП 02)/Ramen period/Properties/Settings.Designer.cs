@@ -50,7 +50,7 @@ namespace Ramen_period.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GTTK21I\\SQLEXPRESS;Initial Catalog=Ramen_Period;Integrated Se" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-87O02SK\\SQLEXPRESS;Initial Catalog=Ramen_Period;Integrated Se" +
             "curity=True;TrustServerCertificate=True")]
         public string Ramen_PeriodConnectionString {
             get {
