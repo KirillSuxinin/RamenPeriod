@@ -1,0 +1,33 @@
+1. Общий средний рейтинг для всех товаров:
+SELECT AVG(Rating) AS AverageRating
+FROM ProductReviews;
+
+
+2. Средний рейтинг для каждого товара:
+SELECT ProductID, AVG(Rating) AS AverageRating
+FROM ProductReviews
+GROUP BY ProductID;
+
+
+3. Средний рейтинг для каждого товара, отсортированный по убыванию рейтинга:
+SELECT ProductID, AVG(Rating) AS AverageRating
+FROM ProductReviews
+GROUP BY ProductID
+ORDER BY AverageRating DESC;
+
+4. Общее количество отзывов и средний рейтинг для каждого товара:
+SELECT ProductID, COUNT(*) AS NumberOfReviews, AVG(Rating) AS AverageRating
+FROM ProductReviews
+GROUP BY ProductID;
+
+	--ИМЯ
+SELECT [Products].ProductName, COUNT(*) AS NumberOfReviews, AVG(Rating) AS AverageRating
+FROM ProductReviews JOIN [Products] ON ([Products].ProductID = ProductReviews.ProductID)
+GROUP BY [Products].ProductName;
+
+
+5. Только товары с определенным минимальным количеством отзывов:
+SELECT ProductID, COUNT(*) AS NumberOfReviews, AVG(Rating) AS AverageRating
+FROM ProductReviews
+GROUP BY ProductID
+HAVING COUNT(*) >= 5;  --  Минимум 5 отзывов

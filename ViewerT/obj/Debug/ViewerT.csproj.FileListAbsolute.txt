@@ -1,0 +1,17 @@
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\bin\Debug\ViewerT.dll
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\bin\Debug\ViewerT.pdb
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.csproj.AssemblyReference.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\UserControl1.g.cs
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT_MarkupCompile.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT_MarkupCompile.lref
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\UserControl1.baml
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.g.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.Properties.Resources.resources
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.csproj.GenerateResource.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.csproj.CoreCompileInputs.cache
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.dll
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ViewerT.pdb
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ProductReviewsControl.g.cs
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\ProductReviewsControl.baml
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\CardsViewerControl.g.cs
+C:\Users\пк\source\repos\PP\УП Рамен и точка (УП 02)\ViewerT\obj\Debug\CardsViewerControl.baml
